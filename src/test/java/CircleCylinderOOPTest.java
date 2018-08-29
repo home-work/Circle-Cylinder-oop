@@ -10,4 +10,12 @@ public class CircleCylinderOOPTest {
         String actual = circle.toString();
         assertEquals(expect, actual);
     }
+
+    @Test
+    public void testClassCylinder() {
+        Cylinder cylinder = new Cylinder(3,4);
+        String expect = "Hình trụ có chiều cao là: 4.0 và có diện tích là: 28.26";
+        String actual = cylinder.toString();
+        assertEquals(expect, actual);
+    }
 }
